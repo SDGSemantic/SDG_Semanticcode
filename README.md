@@ -54,7 +54,7 @@ before compile the source code,you should set Program parameters:
 Please **be sure** to use files in the **same** **format** as the **example**, and ensure that they are in the **same order**, otherwise the results may be inaccurate.
 
 #### Example
-before run this project, you should **Compile Configurations** and set Program arguments:
+before run this project, you should **Compile Configurations** and set Program parameter:
 - projectName_Write = "xerces1.2".
 - projectName = "xerces-1.2.0-src".
 - readString = Project name file path parameter.
