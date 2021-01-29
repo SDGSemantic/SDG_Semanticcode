@@ -1,14 +1,7 @@
-# FSME
+# SMSDG
 
-FCHE (Fine-grained Semantic Metrics Extractor ) is a tool for extraction of file—level semantic metrics.
-# Semantic Similarity Matrix
-Given a set of documents, D = D1, D2, . . . Dn, and their related vectors V = V1, V2, . . . , Vn. The semantic similarity between any two documents could be calculated by taking the cosine between their corresponding vectors. In this step, we generated a matrix to represent the semantic similarity between any two files. The similarity matrix is a square matrix (N × N matrix) that consists of a set of source files. Each cell in this matrix, cell(fi, fj), shows the semantic similarity between files i and j, that is, the semantic similarity of documents Di
-and Dj.
+SMSDG (Semantic Metrics based on semantic dependency graph) is a tool for extraction of file—level semantic metrics.
 
-# Semantic dependency graph
-
-Based on the semantic similarity matrix, we further transferred it into a semantic dependency graph, G. G =< V, E >,where V is the set of source files and E is the set of edges.Each of the edges, e(fi, fj), indicates that file i semantically depends file j. The weight of each edge will be the value of corresponding semantic similarity. In this case, we consider there exists an edge from file A to B (i.e. file A semantically
-depends on file B), if the similarity weight between A and B satisfies: w(A, B) >= C, where C is a threshold indicting the significance of the similarity. If a value is larger than the threshold, we consider there is a semantic dependency.Following the well-know Pareto principle, we set C to be 0.8, meaning that when the w(A, B) >= 0.8, we consider the semantic dependency from file A to B is significant. In addition, to substantiate this setting, we randomly selected one hundred pairs of files and manually examined their lexicon information. We have observed that, when the similarity value of two files is larger than 0.8, we can explicitly identify similar or even identical names, identifiers, or comments. ect.
 # Metrics
 
 ## Semantic Metric
@@ -39,12 +32,12 @@ depends on file B), if the similarity weight between A and B satisfies: w(A, B) 
 # Usage
 
 ###  1) Set up Java environment and Python environment
-you should set up Java environment(jdk1.8).
-you should set up Python3.0 environment(64 bit).
-you should set up understand environment(64 bit).
+you should set up Java environment.(jdk1.8)
+you should set up Python3.0 environment.(64 bit)
+you should set up understand environment.(64 bit)
 
 ###  2)Use 
-before compile the source code,you should set Program arguments:
+before compile the source code,you should set Program parameters:
 < projectName_Write > < projectName > < readString > < writeString >  < udb_path > < Write_path >
 
 
@@ -62,12 +55,12 @@ Please **be sure** to use files in the **same** **format** as the **example**, a
 
 #### Example
 before run this project, you should **Compile Configurations** and set Program arguments:
-projectName_Write = "xerces1.2"
-projectName = "xerces-1.2.0-src"
-readString = "C:\\Users\\sherlock\\Apach\\" + projectName_Write + "_date\\" + projectName_Write + "_filename.csv"
-writeString = "C:\\Users\\sherlock\\Apach\\" + projectName_Write + "_data\\" + projectName_Write + "_filename_metric.csv"
-udb_path = "C:\\Users\\sherlock\\Apach\\" + projectName + "\\" + projectName + ".udb"
-Write_path="C:\\Users\\sherlock\\Apach\\" + projectName_Write + "_dataTime\\" + projectName_Write
+-projectName_Write = "xerces1.2".
+-projectName = "xerces-1.2.0-src".
+-readString = Project name file path parameter.
+-writeString = Semantic metrics file path parameter.
+-udb_path = UDB path parameters.
+-Write_path=Intermediate file path parameter.
 
-then run the project, you will get  xerces1.2_filename_metric.csv in project.
+then run the project, You will get the semantic metrics file of this project as shown below:https://github.com/SDGSemantic/SDG_Semanticcode/blob/main/xerces1.2_filename_metric.csv
 
