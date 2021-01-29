@@ -55,12 +55,12 @@ Please **be sure** to use files in the **same** **format** as the **example**, a
 
 #### Example
 before run this project, you should **Compile Configurations** and set Program arguments:
--projectName_Write = "xerces1.2".
--projectName = "xerces-1.2.0-src".
--readString = Project name file path parameter.
--writeString = Semantic metrics file path parameter.
--udb_path = UDB path parameters.
--Write_path=Intermediate file path parameter.
+- projectName_Write = "xerces1.2".
+- projectName = "xerces-1.2.0-src".
+- readString = Project name file path parameter.
+- writeString = Semantic metrics file path parameter.
+- udb_path = UDB path parameters.
+- Write_path=Intermediate file path parameter.
 
 then run the project, You will get the semantic metrics file of this project as shown below:https://github.com/SDGSemantic/SDG_Semanticcode/blob/main/xerces1.2_filename_metric.csv
 
