@@ -1,42 +1,36 @@
-# SMSDG
+# SSMG
 
-SMSDG (Semantic Metrics based on semantic dependency graph) is a tool for extraction of file—level semantic metrics.
+SSMG (SDG-based Semantic Metrics Generator ) is a tool for extracting semantic metrics.
 
-# Metrics
 
-## Semantic Metric
+# SDG-based Semantic Metric
 
 | Semantic Metric                      | Description                   |
 | :------------------------------ | ------------------------------------------------------------ |
-| Dependent Count (DC)              | Number of files that semantically depends on the file.     |
-| Sum of Dependent Weight (SDW)     |Sum of the semantic weight of the edges formed by fileand the files that semantically depend on it. |
-|Average of Dependency Weight (ADW) |Average of the semantic weight of the edges formed by file and the files that semantically depend on it: ADW=SDW/DC.   |
+| Dependent Count (DC)                | Number of files that semantically depends on the file.     |
+| Sum of Dependent Weight (SDW)       |Sum of the semantic weight of the edges formed by fileand the files that semantically depend on it. |
+|Average of Dependency Weight (ADW)   |Average of the semantic weight of the edges formed by file and the files that semantically depend on it: ADW=SDW/DC.   |
 | Longest Dependency Path(LDP)        | Number of files involved in the longest path of file in the semantic dependency graph.      |
 | Impact Space File Count (ISF)       | Number of files involved in file’s impact space.          |
 | Sum of Files’ Weight (SFW)          | Sum of similarity weights between file and the other files involved in its impact space.      |
 | Average of Files’ Weight (AFW)      | Average of similarity weights between file and the other files inits impact space .AFW=SFW/ISF  |
 | Impact Space Weight (ISW)           | Sum of the weights of all edges in the sub graph (i.e. the impact space).                 |
 |Average Weight of Impact Space (AWIS)| Average weight of file’s impact space: AWIS=ISWf/n, where n is the number of edges in the impact space.|
-|Semantic Similarity Sum (SSS)        | Sum of the similarity between a file and all files in the same project.                 |
-|Semantic similarity average (SSA)    |Average of the similarity between a file and all files in the same project.  |
+|Sum of Semantic Similarity (SSS)     | Sum of the semantic similarities between the file and other files in the same project.    |
+|Average of Semantic Similarity (ASS) | Average of the semantic similarities between the file and other files in the same project.  |
 
-
-
-
-
-# Features
 
 
 
 
 # Usage
 
-###  1) Set up Java environment and Python environment
+## 1)How to set up environment.
 you should set up Java environment.(jdk1.8)
 you should set up Python3.0 environment.(64 bit)
 you should set up understand environment.(64 bit)
 
-###  2)Use 
+##  2)How to use code.
 before compile the source code,you should set Program parameters:
 < projectName_Write > < projectName > < readString > < writeString >  < udb_path > < Write_path >
 
@@ -53,7 +47,7 @@ before compile the source code,you should set Program parameters:
 
 Please **be sure** to use files in the **same** **format** as the **example**, and ensure that they are in the **same order**, otherwise the results may be inaccurate.
 
-#### Example
+### Example
 before run this project, you should **Compile Configurations** and set Program parameter:
 - projectName_Write = "xerces1.2".
 - projectName = "xerces-1.2.0-src".
