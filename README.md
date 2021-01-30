@@ -26,9 +26,9 @@ SSMG (SDG-based Semantic Metrics Generator ) is a tool for extracting semantic m
 # Usage
 
 ## 1)How to set up environment.
-you should set up Java environment.(jdk1.8)
-you should set up Python3.0 environment.(64 bit)
-you should set up understand environment.(64 bit)
+- you should set up Java environment.(jdk1.8)
+- you should set up Python3.0 environment.(64 bit)
+- you should set up understand environment.(64 bit)
 
 ##  2)How to use code.
 before compile the source code,you should set Program parameters:
@@ -47,7 +47,7 @@ before compile the source code,you should set Program parameters:
 
 Please **be sure** to use files in the **same** **format** as the **example**, and ensure that they are in the **same order**, otherwise the results may be inaccurate.
 
-### Example
+#### Example
 before run this project, you should **Compile Configurations** and set Program parameter:
 - projectName_Write = "xerces1.2".
 - projectName = "xerces-1.2.0-src".
